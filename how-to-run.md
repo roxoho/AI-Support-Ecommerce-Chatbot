@@ -80,5 +80,6 @@ You can run the chatbot directly by uncommenting the last 4 lines of the `chatbo
 
 ```sh
 python chatbot.py
+```
 
 Make sure to comment them again to use the web app and ensure you are in the chatbot directory in the terminal. 
