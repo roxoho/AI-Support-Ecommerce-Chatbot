@@ -1,0 +1,375 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi!",
+        "Hey!",
+        "Hello!",
+        "Hello, What's up",
+        "Hi",
+        "Hey"
+      ],
+      "responses": [
+        "Hello! Welcome to our e-commerce support. How can I assist you today?",
+        "Hi there! How may I help you with your online shopping experience?",
+        "Greetings! What can I do for you regarding our online store?"
+      ]
+    },
+    {
+      "tag": "farewell",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Take care",
+        "Thanks, bye",
+        "by",
+        "ok, bye"
+      ],
+      "responses": [
+        "Thank you for contacting our e-commerce support. Have a great day!",
+        "Goodbye! If you need any further assistance, don't hesitate to reach out.",
+        "Take care! We appreciate your business."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thank you",
+        "Thanks",
+        "Thanks a lot",
+        "I appreciate it",
+        "That's helpful"
+      ],
+      "responses": [
+        "You're welcome! Is there anything else I can help you with?",
+        "I'm glad I could assist you. Don't hesitate to ask if you need more help.",
+        "It's my pleasure. Feel free to reach out if you have any more questions."
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order?", "What's the status of my order?", "When will my order arrive?", "Is my order shipped?", "Can you track my package?"
+      ],
+      "responses": [
+        "I'd be happy to check on your order status. Could you please provide your order number?",
+        "To track your order, I'll need your order number. Once you provide it, I can give you the latest update.",
+        "Let's look into your order status. What's the order number associated with your purchase?"
+      ]
+    },
+    {
+      "tag": "provide_order_number",
+      "patterns": [
+        "My order number is", "The order number is", "Here's my order number:", "Order #", "Order number:","0123456789"
+      ],
+      "responses": [
+        "Thank you for providing your order number. Let me check that for you... [Simulated lookup] Your order is currently in transit and expected to arrive within 2-3 business days.",
+        "I've located your order. [Simulated lookup] It was shipped yesterday and is scheduled for delivery next Monday.",
+        "I've found your order in our system. [Simulated lookup] It's being processed and will be shipped out tomorrow."
+      ]
+    },
+    {
+      "tag": "return_policy",
+      "patterns": [
+        "What's your return policy?", "How can I return an item?", "Is there a time limit for returns?", "Do I need to pay for return shipping?", "Can I exchange an item instead of returning it?"
+      ],
+      "responses": [
+        "Our return policy allows returns within 30 days of purchase. You can initiate a return through your account or by contacting customer service. Return shipping is free for defective items.",
+        "We offer a 30-day return window for most items. You can choose between a refund or an exchange. Please check our website for specific details on the item you want to return.",
+        "Returns are accepted within 30 days. You can start the process online or by contacting us. Keep in mind that some items may have specific return conditions."
+      ]
+    },
+    {
+      "tag": "refund_policy",
+      "patterns": [
+        "What's your refund policy?", "How long do refunds take?", "When will I get my money back?", "Do you offer full refunds?", "Is there a restocking fee for refunds?"
+      ],
+      "responses": [
+        "Our refund policy allows for full refunds on most items within 30 days of purchase. Once we receive and process your return, refunds typically take 5-10 business days to appear on your original payment method.",
+        "We offer full refunds for items returned in their original condition within 30 days. There's no restocking fee for most items. After processing your return, refunds usually take about a week to be credited back to your account.",
+        "Refunds are processed within 3-5 business days after we receive your return. You'll get a full refund to your original payment method for most items, as long as they're returned in sellable condition within 30 days."
+      ]
+    },
+    {
+      "tag": "payment_methods",
+      "patterns": [
+        "What payment methods do you accept?", "Can I pay with PayPal?", "Do you accept credit cards?", "Is it possible to pay with cryptocurrency?", "Can I use Apple Pay or Google Pay?"
+      ],
+      "responses": [
+        "We accept various payment methods including credit cards (Visa, MasterCard, American Express), PayPal, and bank transfers. Apple Pay and Google Pay are also available for mobile purchases.",
+        "Our payment options include major credit cards, PayPal, and bank transfers. For mobile users, we support Apple Pay and Google Pay as well.",
+        "You can pay using credit cards, PayPal, or bank transfers. We also support digital wallets like Apple Pay and Google Pay for your convenience."
+      ]
+    },
+    {
+      "tag": "shipping_cost",
+      "patterns": [
+        "How much is shipping?", "Do you offer free shipping?", "What are the shipping rates?", "Is there a minimum order for free shipping?", "How is shipping calculated?"
+      ],
+      "responses": [
+        "Shipping costs vary based on your location and the items in your order. We offer free shipping on orders over $50. You can see the exact shipping cost at checkout.",
+        "We provide free shipping for orders above $50. For orders below this amount, shipping is calculated based on weight and destination. The final cost is shown before you complete your purchase.",
+        "Shipping rates depend on your location and order details. Orders over $50 qualify for free shipping. You'll see the exact shipping cost in your cart before finalizing your order."
+      ]
+    },
+    {
+      "tag": "product_availability",
+      "patterns": [
+        "Is this item in stock?", "When will you restock this product?", "Can I be notified when an item is back in stock?", "Why is this product out of stock?", "How often do you restock items?"
+      ],
+      "responses": [
+        "Stock availability is shown on each product page. If an item is out of stock, you can sign up for email notifications when it's restocked. Could you specify which product you're interested in?",
+        "Our website displays real-time stock information. For out-of-stock items, we offer a notification service. Which specific product are you looking for?",
+        "We update our stock regularly. If an item is unavailable, you can opt for restock notifications. What's the name or code of the product you're inquiring about?"
+      ]
+    },
+    {
+      "tag": "promotions",
+      "patterns": [
+        "Are there any current promotions?", "Do you have any discount codes?", "When is your next sale?", "How can I get a coupon?", "Are there any special offers for new customers?"
+      ],
+      "responses": [
+        "We regularly run promotions. The best way to stay updated is to subscribe to our newsletter. You can also check our 'Special Offers' page on the website for current deals.",
+        "Our promotions change frequently. New customers can get 10% off their first purchase by signing up for our newsletter. Check our website or social media for other ongoing deals.",
+        "We offer various promotions throughout the year. Subscribe to our newsletter for exclusive deals, and don't forget to check our website's 'Sale' section for current offers."
+      ]
+    },
+    {
+      "tag": "product_information",
+      "patterns": [
+        "Can you tell me more about this product?", "What are the specifications of this item?", "Is this product compatible with...?", "What materials is this made from?", "Do you have different sizes/colors for this item?"
+      ],
+      "responses": [
+        "I'd be happy to provide more information about a specific product. Could you please provide the name or item number of the product you're interested in?",
+        "Detailed product information, including specifications, materials, and available variations, can be found on each product's page. Which item would you like to know more about?",
+        "To give you accurate information, I'll need to know which product you're referring to. Can you share the product name or code?"
+      ]
+    },
+    {
+      "tag": "product_details_follow_up",
+      "patterns": [
+        "The product is", "I'm looking at", "It's the", "The item number is", "The product code is"
+      ],
+      "responses": [
+        "Thank you for specifying the product. [Simulated lookup] This item is made of high-quality materials and comes in sizes S, M, L, and XL. It's available in blue, red, and black. Is there any specific aspect you'd like more details on?",
+        "I've found the product you mentioned. [Simulated lookup] It's one of our bestsellers, known for its durability and versatility. It comes with a 2-year warranty. What particular features are you interested in?",
+        "I have the information for that product. [Simulated lookup] It's compatible with most standard devices and has received excellent customer reviews. Would you like to know about its technical specifications or user experiences?"
+      ]
+    },
+    {
+      "tag": "account_issues",
+      "patterns": [
+        "I can't log into my account", "How do I reset my password?", "I forgot my username", "Can I change my email address?", "How do I update my account information?"
+      ],
+      "responses": [
+        "I'm sorry you're having trouble with your account. For password resets, click the 'Forgot Password' link on the login page. For other account issues, please contact our customer support team directly.",
+        "Account security is important to us. You can reset your password via the login page. For username recovery or changing your email, please reach out to our customer support for assistance.",
+        "To help with account issues, you can use the 'Forgot Password' feature on our website. For more complex problems or account changes, our customer support team will be happy to assist you directly."
+      ]
+    },
+    {
+      "tag": "international_shipping",
+      "patterns": [
+        "Do you ship internationally?",
+        "Which countries do you ship to?",
+        "How long does international shipping take?",
+        "Are there additional fees for international orders?",
+        "Can I track my international shipment?"
+      ],
+      "responses": [
+        "Yes, we offer international shipping to many countries. Delivery times and fees vary depending on the destination. You can see a list of supported countries and estimated shipping times at checkout.",
+        "We ship to numerous countries worldwide. International shipping duration typically ranges from 7-21 business days, depending on the destination. Additional customs fees may apply, which are the responsibility of the recipient.",
+        "International shipping is available for most countries. You can track your international shipment using the provided tracking number. Please note that customs procedures may affect delivery times and potentially incur additional fees."
+      ]
+    },
+    {
+      "tag": "size_guide",
+      "patterns": [
+        "Where can I find your size guide?",
+        "How do your sizes run?",
+        "What size should I order?",
+        "Do you have a fit guide?",
+        "Are your sizes true to fit?"
+      ],
+      "responses": [
+        "You can find our size guide on each product page or in the 'Help' section of our website. It provides detailed measurements for all our sizes to help you find the best fit.",
+        "We offer a comprehensive size guide for each product category. You can access it from the product page or the main menu. If you're between sizes, we generally recommend going for the larger size.",
+        "Our size guide is available on every product page. It includes specific measurements and fit advice. If you're still unsure, feel free to contact our customer support for personalized recommendations."
+      ]
+    },
+    {
+      "tag": "customer_support_contact",
+      "patterns": [
+        "How can I contact customer support?", "What's your support phone number?", "Do you have live chat support?", "What are your customer service hours?", "Is there an email for support?"
+      ],
+      "responses": [
+        "You can reach our customer support team via phone at *-***-***-****, email at support@ourImaginaystore.com, or through the live chat feature on our website. Our support hours are Monday to Friday, 9 AM to 8 PM EST.",
+        "We offer multiple ways to contact our support team: phone (*-***-***-****), email (support@ourImaginaystore.com), and live chat on our website. We're available to assist you from 9 AM to 8 PM EST on weekdays.",
+        "Our customer support is available by phone (*-***-***-****), email (support@ourImaginaystore.com), and live chat. We provide support from Monday to Friday, 9 AM to 8 PM EST. How would you prefer to contact us?"
+      ]
+    },
+    {
+      "tag": "new_item_suggestions",
+      "patterns": [
+        "What are your newest products?", "Can you recommend something new?", "What's trending in your store?", "Any new arrivals you'd suggest?", "What's popular this season?"
+      ],
+      "responses": [
+        "Our newest arrivals include [simulated products]. These items are trending among our customers. Would you like more details on any of these?",
+        "We've recently added [simulated products] to our collection. They're quite popular this season. Is there a particular category you're interested in?",
+        "Some of our trending new items are [simulated products]. These have been getting great reviews. Would you like to know more about any of these products?"
+      ]
+    },
+    {
+      "tag": "company_information",
+      "patterns": [
+        "Tell me about your company", "What's the history of your store?", "Who founded your company?", "How long have you been in business?", "What's your company's mission?"
+      ],
+      "responses": [
+        "Our company was founded in 2005 with a mission to provide high-quality products at affordable prices. We've grown from a small online store to a major e-commerce platform, always focusing on customer satisfaction and innovation.",
+        "We've been in the e-commerce business for over 15 years. Our founder started the company with a vision to make online shopping easy and enjoyable for everyone. Today, we serve millions of customers worldwide.",
+        "Our company's journey began in 2005. We're committed to offering a wide range of products while maintaining excellent customer service. Our mission is to be the most customer-centric online retailer in the world."
+      ]
+    },
+    {
+      "tag": "customer_reviews",
+      "patterns": [
+        "Can I see customer reviews?", "Where can I find product ratings?", "Are there any testimonials?", "What do other customers say about this product?", "How is the customer feedback for this item?"
+      ],
+      "responses": [
+        "Customer reviews are available on each product page. You can find them by scrolling down to the 'Customer Reviews' section. These reviews include ratings and detailed feedback from verified purchasers.",
+        "We value customer feedback and display reviews on all product pages. You'll find star ratings and written reviews from other customers who have purchased the item. This can help you make an informed decision.",
+        "Product ratings and reviews are shown on individual product pages. Look for the 'Reviews' tab or section to see what other customers are saying about the item you're interested in."
+      ]
+    },
+    {
+      "tag": "cancel_modify_order",
+      "patterns": [
+        "How do I cancel my order?", "Can I change my order after placing it?", "Is it possible to modify my order?", "I want to add something to my order", "Can I remove an item from my order?"
+      ],
+      "responses": [
+        "You can cancel or modify your order within 1 hour of placing it through your account dashboard. For changes after this window, please contact our customer support team immediately, and we'll do our best to accommodate your request.",
+        "Order modifications are possible within the first hour after placing your order. Use the 'Modify Order' option in your account. For later changes, reach out to our support team, and we'll assist you based on the order's current status.",
+        "To cancel or change your order, log into your account and go to 'Order History'. You can modify orders within the first hour. For later changes, contact our support team, and we'll help you if the order hasn't been processed yet."
+      ]
+    },
+    {
+      "tag": "product_niche_focus",
+      "patterns": [
+        "What types of products do you specialize in?", "What's your main product category?", "Do you focus on any particular niche?", "What are you known for selling?", "What's your primary market?"
+      ],
+      "responses": [
+        "We specialize in a wide range of electronics and tech accessories. Our primary focus is on smartphones, laptops, and their accessories, but we also offer smart home devices and wearable technology.",
+        "Our niche is primarily in the tech and electronics sector. We're known for our extensive selection of computer hardware, gaming accessories, and audio equipment. We also have a growing collection of smart home products.",
+        "While we offer various products, our main focus is on consumer electronics. This includes everything from mobile devices and computers to home entertainment systems and photographic equipment."
+      ]
+    },
+    {
+      "tag": "damaged_delivery",
+      "patterns": [
+        "My order arrived damaged", "The product I received is broken", "What do I do if my item is damaged?", "I got a defective product", "The package was damaged during shipping"
+      ],
+      "responses": [
+        "I'm sorry to hear that your order arrived damaged. Please take photos of the damaged item and packaging, then contact our customer support team. We'll arrange for a return and replacement or refund as soon as possible.",
+        "We apologize for the inconvenience. For damaged deliveries, please document the damage with photos and reach out to our support team immediately. We'll guide you through our return process and ensure you receive a replacement or refund.",
+        "If your order is damaged, please don't use the product. Take clear photos of the damage and contact our customer service right away. We'll process a return and send you a replacement or provide a refund, depending on your preference."
+      ]
+    },
+    {
+      "tag": "gift_packaging",
+      "patterns": [
+        "Do you offer gift wrapping?", "Can I send this as a gift?", "Is there a gift option at checkout?", "How do I add a gift message?", "Do you provide gift receipts?"
+      ],
+      "responses": [
+        "Yes, we offer gift packaging options! During checkout, you can select 'Gift Wrap' for a small additional fee. You can also add a personalized gift message and request a gift receipt that doesn't show the price.",
+        "We provide gift wrapping services for a nominal charge. When you're checking out, look for the 'Gift Options' section where you can choose gift wrap, add a message, and opt for a gift receipt.",
+        "Absolutely! We have gift packaging available. At checkout, you'll see options for gift wrapping, adding a gift message, and including a gift receipt. These options help make your gift extra special."
+      ]
+    },
+    {
+      "tag": "warranty_information",
+      "patterns": [
+        "What kind of warranty do you offer?", "How long is the warranty period?", "Is there an extended warranty available?", "What does the warranty cover?", "How do I claim warranty?"
+      ],
+      "responses": [
+        "Our standard warranty covers manufacturing defects for one year from the date of purchase. Some products may have different warranty periods. For details on a specific item or to purchase an extended warranty, please check the product page or contact our support team.",
+        "We offer a 1-year limited warranty on most products, covering defects in materials and workmanship. Extended warranties are available for certain items. To claim warranty service, you'll need to contact our customer support with your order details and a description of the issue.",
+        "Warranty periods vary by product, but most items come with a 1-year limited warranty. This typically covers manufacturing defects. For specific warranty information or to learn about extended warranty options, please refer to the product page or reach out to our customer service."
+      ]
+    },
+    {
+      "tag": "bulk_orders",
+      "patterns": [
+        "Do you offer bulk discounts?", "Can I place a large order for my business?", "What about wholesale pricing?", "Is there a minimum quantity for bulk orders?", "How do I request a quote for a large order?"
+      ],
+      "responses": [
+        "Yes, we do offer bulk discounts for large orders. The discount varies based on the quantity and specific products. For a custom quote, please contact our sales team at sales@ourstore.com with details of your desired items and quantities.",
+        "We provide special pricing for bulk and wholesale orders. There's typically a minimum quantity requirement, which varies by product. To get started, please email our business sales department at b2b@ourstore.com with your requirements.",
+        "Bulk and wholesale orders are welcome! Discounts are available based on order size. To request a quote or discuss your needs, please reach out to our business sales team. They'll be happy to provide pricing information and assist with your order."
+      ]
+    },
+    {
+      "tag": "price_match",
+      "patterns": [
+        "Do you price match?", "I found this cheaper elsewhere", "Can you match a competitor's price?", "What's your price matching policy?", "Will you beat a lower price?"
+      ],
+      "responses": [
+        "We offer price matching on identical items sold by major retailers. If you find a lower price within 14 days of your purchase, contact us with the competitor's information, and we'll match it. Some restrictions apply, so please check our price match policy for full details.",
+        "Yes, we do price match! If you find a lower price on an identical item from an approved competitor within two weeks of your purchase, we'll match it. Just reach out to our customer service with the details, and they'll guide you through the process.",
+        "Our price match policy ensures you get the best deal. If you see a lower price on the same item from a qualifying retailer, let us know within 14 days of your purchase. We'll verify the price and match it for you, subject to our policy terms."
+      ]
+    },
+    {
+      "tag": "environmentally_friendly",
+      "patterns": [
+        "Are your products eco-friendly?", "Do you use sustainable packaging?", "What's your environmental policy?", "Are you a green company?", "Do you offer recycling programs?"
+      ],
+      "responses": [
+        "We're committed to environmental sustainability. Many of our products are eco-friendly, and we're continuously expanding this range. We use recyclable packaging materials and offer a recycling program for electronics. Check our 'Sustainability' page for more details on our green initiatives.",
+        "Environmental responsibility is important to us. We offer a growing selection of eco-friendly products and use sustainable packaging where possible. We also have a recycling program for old electronics. You can find more information about our environmental efforts on our website.",
+        "We strive to be an environmentally conscious company. This includes offering eco-friendly product options, using sustainable packaging, and providing electronics recycling services. We're always looking for ways to reduce our environmental impact and welcome customer suggestions."
+      ]
+    },
+    {
+      "tag": "product_customization",
+      "patterns": [
+        "Can I customize this product?", "Do you offer personalization?", "Is it possible to engrave this item?", "Can I add a logo to this product?", "Do you have custom color options?"
+      ],
+      "responses": [
+        "We offer customization options for select products. This can include engraving, color choices, or adding personal text. Check the product page for available customization options, or contact our customer service for specific requests.",
+        "Personalization is available for many of our items. Depending on the product, you might be able to choose colors, add engravings, or include custom text. Look for the 'Customize' option on the product page, or reach out to us for special requests.",
+        "Yes, we do offer product customization for certain items. This could involve choosing specific colors, adding engravings, or including personalized text. The available options vary by product, so please check the item's page or contact us for more information."
+      ]
+    },
+    {
+      "tag": "loyalty_program",
+      "patterns": [
+        "Do you have a loyalty program?", "How do I earn points?", "What are the benefits of your rewards program?", "How do I join your loyalty scheme?", "Can I get discounts for being a regular customer?"
+      ],
+      "responses": [
+        "Yes, we have a loyalty program! You earn points on every purchase, which can be redeemed for discounts on future orders. Members also get early access to sales and exclusive offers. You can join for free through your account page on our website.",
+        "Our loyalty program rewards you for shopping with us. You'll earn points on purchases, get birthday bonuses, and receive exclusive member-only discounts. Signing up is free and easy - just create an account on our website to start earning rewards.",
+        "We offer a rewards program for our valued customers. You'll earn points on purchases, which you can use for discounts. Other perks include early sale access and special member promotions. Join by creating an account or during checkout on our website."
+      ]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [
+        "asdfghjkl",
+        "abcd",
+        "random gibberish",
+        "xylophone zebra",
+        "blah blah",
+        "jdhdhdj",
+        "uuuuuuuuuu"
+      ],
+      "responses": [
+        "I apologize, but I didn't quite understand that. Could you please rephrase your question or concern?",
+        "I'm sorry, but I'm not sure what you mean. Can you please provide more context or ask your question differently?",
+        "I'm having trouble understanding your input. Could you please clarify or ask a specific question about our e-commerce services?",
+        "It seems like there might be a typo or unclear message. How can I assist you with your online shopping experience today?"
+      ]
+    }
+  ]
+}

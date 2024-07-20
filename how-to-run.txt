@@ -1,0 +1,76 @@
+
+
+********
+Method 1 (Recommended, using virtual environment)
+********
+
+
+1. Creating an Virtual Environment(to avoid unnecessary issues)
+
+    (a)open VScode terminal, or any other terminal and run this to create an Virtual Environment:
+       
+       "python -m venv myenv"
+
+    (b) Then activate the Virtual Environment:
+        
+       Windows:-  "myenv\Scripts\activate", on command prompt terminal
+       MacOs and Linux:-  "source myenv/bin/activate"
+
+2. Now, Unzip the chatbot.zip file into the folder containing myenv folder
+
+    It should resemble this 
+     folder
+     - myenv
+     - chatbot
+    
+3. Now, move into the chatbot folder on the terminal
+   
+   cd chatbot
+
+   (a) Install the dependencies:- Open the terminal, and write 
+     
+       "pip install -r requirements.txt"
+
+4. Now, on the same terminal directory, run
+  
+   "python app.py"
+
+   make sure the Virtual Environment is activate on that terminal
+
+
+You are all set, just follow the mentioned link and use the chatbot 
+
+
+
+
+
+********
+Method 2 (Not using the virtual environment)
+********
+
+
+Unzip the folder and open it in code editor
+
+1. Install the dependencies:- Open the terminal, and write 
+     
+       "pip install -r requirements.txt"
+
+2. Now, on the same terminal directory, run
+  
+   "python app.py"
+
+
+You are all set, just follow the mentioned link and use the chatbot 
+
+
+
+
+*************
+Alternatively,(in all methods)
+*************
+
+You can run the chatbot by itself, uncommenting the last 4 lines of the chatbot.py file and running it.
+
+"python chatbot.py"
+
+Make sure to comment them like before to use the web app again, and also be sure you are into the chatbot directory on the terminal
