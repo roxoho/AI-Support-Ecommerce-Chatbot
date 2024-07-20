@@ -4,7 +4,7 @@
 This project involves creating an AI-based support chatbot for an e-commerce website. The chatbot is designed to assist users by answering their queries and providing suggestions for common questions.
 
 ### Key Features
-The chatbot is capable of answering a variety of common customer queries, such as:
+The chatbot is capable of answering a variety of common customer queries, for example:
 
 - **Return policy**
 - **Shipping options**
