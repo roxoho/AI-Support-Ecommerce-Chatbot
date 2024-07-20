@@ -3,11 +3,6 @@
 ## Overview
 This project involves creating an AI-based support chatbot for an e-commerce website. The chatbot is designed to assist users by answering their queries and providing suggestions for common questions.
 
-<video width="600" controls>
-  <source src="https://drive.google.com/uc?export=download&id=1_91FBsHa5TxL20kXQ0sQpoaWQ-dwiEB8" type="video/mov">
-  Your browser does not support the video tag.
-</video>
-
 ### Key Features
 The chatbot is capable of answering a variety of common customer queries, for example:
 
